@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a { 
+  color: #00B7FF;
+}
+
+.two {
+    display:block;
+    margin:30px;
+    span { display:none; } // hide until ready 
+    &.drop-zone{ span { display:block; font-size:10px;} }
+}
+
+#draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+#droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+
+
+.main-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content .main-masthead{
+  margin-bottom: 5px;
+}
+
+.main-content .main-caption{
+  margin-bottom: 32px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+}
+
+.login-form input {
+  padding: 8px;
+}
+
+.login-form #submit-btn{
+  border: none;
+  background-color: #00B7FF;
+  color: white;
+  cursor: pointer;
+}
+
+.login-form #submit-btn:hover{
+  background-color: rgb(17, 90, 119);
+}
+
+.logout-btn {
+  padding: 8px 12px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.logout-btn:hover{
+  background-color: rgb(8, 8, 41);
+  color: white;
+}
+
+.dp-upload-btn {
+  opacity: 0;
+}
+
+.dp-upload-btn:hover {
+  opacity: 1;
+}
+
+.info-form-details input{
+  padding: 8px;
+  min-width: 300px;
+}

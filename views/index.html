@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="TodoApp">
+<head>
+	<title>Todo's</title>
+	<base href="/">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/stylesheets/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div ui-view></div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/@uirouter/angularjs@1.0.5/release/angular-ui-router.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="/javascripts/app.js"></script>
+
+<!-- Controllers-->
+<script src="/javascripts/controllers/authController.js"></script>
+<script src="/javascripts/controllers/onboardingController.js"></script>
+<script src="/javascripts/controllers/taskController.js"></script>
+
+<!-- Services-->
+<script src="/javascripts/services/registerService.js"></script>
+<script src="/javascripts/services/loginService.js"></script>
+<script src="/javascripts/services/onboardingService.js"></script>
+<script src="/javascripts/services/taskService.js"></script>
+
+<!-- Directives-->
+<script src="/javascripts/directives/tasksList.js"></script>
+<script src="/javascripts/directives/authForm.js"></script>
+
+<!-- shim is needed to support non-HTML5 FormData browsers (IE8-9)-->
+<script src="/modules/ng-file-upload/dist/ng-file-upload-shim.min.js"></script>
+<script src="/modules/ng-file-upload/dist/ng-file-upload.min.js"></script>
+<script src="https://use.fontawesome.com/d01f61d96e.js"></script>
+
+</body>
+</html>
